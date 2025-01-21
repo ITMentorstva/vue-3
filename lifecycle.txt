@@ -1,0 +1,25 @@
+
+
+==========
+Component lifecycle
+==========
+
+1. Create
+    = Sinhrono
+    -> beforeCreate
+        -> Da li je to mozda postojeci neki korisnik ili returning user
+        -> Kada je komponenta ucitana (koliko je korisnik dugo na stranici)
+        -> Logging system koji je pratio kada se komponenta ucitala
+    -> created
+        -> API za rezultate
+        -> API za vremensku prognozu
+        -> Sales Chart (grafikone)
+
+2. Mount
+    -> beforeMount
+        -> Odluciti da li treba nesto da se prikaze (conditional rendering)
+    -> mounted
+        -> Pripremite neke podatke koje ste prethodno uzeli
+
+Update (beforeUpdate, updated)
+Unmount (beforeUnmount, unmounted)
